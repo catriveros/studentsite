@@ -113,3 +113,14 @@ footer {
 .courses h3 {
     text-align: center;
 }
+
+/* STYLING FOR SUB PAGES */
+.page-sub .hero {
+    background-color:rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* COURSEWORK SECTION */
+.coursework {
+    padding: 6em 1em;
+}
