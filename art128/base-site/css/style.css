@@ -119,8 +119,8 @@ img {
 button { 
   font-size: inherit;
   line-height: 1;
-  background-color: rgba(0, 0, 255,1);
-  border: 1px solid rgba(0,0,255,1);
+  background-color: rgb(141, 141, 141);
+  border: 1px solid rgb(141, 141, 141);
   color: rgba(255,255,255,1);
   padding: 1em; 
   display: inline-block; 
@@ -131,20 +131,20 @@ button {
 
 .button:hover,
 button:hover {
-  background-color: rgba(0,0,153,1);
-  border-color: rgba(0,0,153,1);
+  background-color: rgba(153,0,0,1);
+  border-color: rgba(153,0,0,1);
   color: rgba(255,255,255,1); 
   text-decoration: none; 
 }
 
 .button.alt {
-  border: 1px solid rgba(0,0,0,1);
+  border: 1px solid rgb(141, 141, 141);
   background-color: transparent; 
-  color: rgba(0,0,153,1);
+  color: rgba(153,0,0,1);
 }
 
 .button.alt:hover {
-  background-color: rgba(0,0,153,1);
+  background-color: rgba(153,0,0,1);;
   color: rgba(255,255,255,1);
 }
 
