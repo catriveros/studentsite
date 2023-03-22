@@ -404,8 +404,8 @@ section {
          
       }
 
-      .toggle-nav[data-navstate="open"] .site-nav .menu-button .navicon::after {
-        content: "\2630";
+      .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
+        content: "\2715";
       }
  }
 
