@@ -144,8 +144,9 @@ a:hover {
     height: auto; 
  }
 /* BUTTONS */
-.button, 
-button { 
+button, 
+a.button,
+form input[type="submit"] { 
   font-size: inherit;
   line-height: 1;
   background-color: rgb(141, 141, 141);
@@ -158,8 +159,9 @@ button {
   border-radius: .5em; 
 }
 
-.button:hover,
-button:hover {
+button:hover,
+a.button:hover, 
+form input[type="submit"]:hover {
   background-color: rgba(153,0,0,1);
   border-color: rgba(153,0,0,1);
   color: rgba(255,255,255,1); 
@@ -532,3 +534,4 @@ form input[type="submit"] {
     margin-top: 1.5em;
     width: auto;
 }
+
