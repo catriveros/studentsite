@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Site Name | Base Site w/ Sub Pages</title>
-    <meta name="description" content="This is a starter HTML + CSS + JS base boilerplate set of code for website projects." />
+    <title>Site Name | Single Page Site </title>
+    <meta name="description" content="An example single page site built using SiteBase." />
     
 <!-- FOR MOBILE / SMALL SCREENS -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,15 +25,17 @@
     <div class="container">
         <div class="site-id">
           
-            <h1><a href="index.html">Site Name</a></h1>
+            <h1><a href="#top">Site Name</a>
+                <span class="hidden-sm"> / single page version</span>
+            </h1>
         </div>
-        <nav class="site-nav">
+        <nav class="site-nav"> 
             <div class="menu-button navicon">Menu</div>
             <ul class="nav">
                 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
         
             </ul>
         </nav>
@@ -44,11 +46,11 @@
 
     <div class="container">
         <section class="hero text-centered">
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque eum voluptas dignissimos error libero optio beatae corporis porro asperiores maxime?</p> 
+            <h1>This is the Hero Section</h1>
+            <p>This is the hero section of a single-page web site.</p> 
             <p>
-            <a href="#" class="button">CTA Button</a>
-            <a href="#" class="button alt">Alt CTA Button</a>
+            <a class="button scroll" href="#about">Learn More About Us</a>
+            <a class="button alt scroll" href="#contact">Get in Touch</a>
         </p>
         </section>
     </div>
@@ -84,9 +86,9 @@
     <div class="container">
         <nav class="site-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
