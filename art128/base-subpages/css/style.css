@@ -372,7 +372,7 @@ section {
     text-align: center;
 }
 
-.hero h1, p {
+.hero h1, .hero p {
     max-width: 600px; 
     margin-left: auto;
     margin-right: auto; 
@@ -533,5 +533,13 @@ form textarea {
 form input[type="submit"] {
     margin-top: 1.5em;
     width: auto;
+}
+
+/* CARD */
+
+.card {
+    background: #ccc ;
+    padding: 1em 2em;
+    border-radius: 1em;
 }
 
