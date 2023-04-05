@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Blue Mind Surf Therapy Draft 1</title>
-    <meta name="description" content="This is a starter HTML + CSS + JS base boilerplate set of code for website projects." />
+    <title>Blue Mind Surf Therapy | Single Page Site </title>
+    <meta name="description" content="An example single page site built using SiteBase." />
     
 <!-- FOR MOBILE / SMALL SCREENS -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,121 +15,169 @@
 <link rel="stylesheet" href="css/style.css">
 
 </head>
+<body id="top">
 
-<body>
-    
-    <header class="site-header toggle-nav" data-navstate="closed">
-    <div class="container">
-        <div class="site-id">
-            <h1>
-                <a href="index.html">Site Name</a> / Test 1
-            </h1>
-        </div>
-        <nav class="site-nav">
-            <button class="menu-button navicon">Menu</button>
-            <ul>>
-                
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-        
+    <header class="site-header toggle-nav sticky" data-navstate="closed">
+        <div class="container">
+            <div class="site-id">
+        <h1><a href="#top" class="scroll">Blue Mind Surf Therapy</a>
+        <span class="hidden-sm"></span>
+      </h1>
+      </div>
+            <nav class="site-nav">
+                <button class="menu-button navicon">Menu</button>
+                <ul>
+                <li><a class="scroll" href="#top">Home</a></li>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
+        <!-- END CONTAINER -->
 </header>
 
 <main class="site-main">
-    <section class="hero text-centered full-width">
-      <h1>Test 1</h1>
-      <p>
-        This is me messing around with layout.
-      </p>
+
+
+
+    <section class="hero text-centered">
+        <div class="container">
+            <h1>Hero Image Blurb</h1>
+            <p>This is the hero section of a single-page web site.</p> 
+            <p>
+            <a class="button scroll" href="#about">Place Holder Text</a>
+            <a class="button alt scroll" href="#contact">Get in Touch</a>
+            </p>
     </section>
+        </div>
+    <!-- END CONTAINER -->
+    
+    <section class="about text-centered">
+        <div class="container">
+            <h1>Blue Mind Surf Therapy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, explicabo dolorum. Dolores adipisci earum laudantium culpa reprehenderit ratione corrupti nihil?.</p> 
+            
+    </section>
+        </div>
+     <!-- END CONTAINER -->
 
 
     <section>
         <div class="container">
-
             <div class="row">
-                <div class="column one-third">
-                    <div class="card">
-
-                        <h2> A Battery Life That <span> All Day Long </span></h2>
-                    </div>
+                <div class="column one-half">
+                    <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+                    <h2>Our Program</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat culpa architecto, impedit sapiente soluta corrupti fuga consequatur perferendis laborum molestias?</p>
+                    <a href="#" class="button">Button</a>
                 </div>
-          
-                <div class="column two-thirds">
-                    <div class="card">
-                        <h2> Pro Video</h2>
-                        <p> Film Like a Pro</p>
-                    </div>
-                </div>
-          </div>
 
-       </div>
+                <div class="column one-half">
+                    <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+                    <h2>Image Blurb</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat culpa architecto, impedit sapiente soluta corrupti fuga consequatur perferendis laborum molestias?</p>
+                    <a href="#" class="button">Button</a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+        
+        <div class="container">
+            <div class="row">
+                <div class="column one-half">
+                    <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+                    <h2>Image Blurb</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat culpa architecto, impedit sapiente soluta corrupti fuga consequatur perferendis laborum molestias?</p>
+                    <a href="#" class="button">Button</a>
+                </div>
+
+                <div class="column one-half">
+                    <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+                    <h2>Dr. Lisa Mo</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat culpa architecto, impedit sapiente soluta corrupti fuga consequatur perferendis laborum molestias?</p>
+                    <a href="#" class="button">Button</a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+
     </section>
 
-    <section>
+    <section id="about">
+        <div class="container">
 
-        <div class="row">
-            <div class="column one-fourth">
-                <h3>iphone 14</h3>
-                <p>The ultimate phone</p>
-            </div>
+                <h3 class="section-title">About Us</h3>
 
-            <div class="column one-fourth">
-                <h3>iphone 14</h3>
-                <p>The ultimate phone</p>
-            </div>
-
-            <div class="column one-fourth">
-                <h3>iphone 14</h3>
-                <p>The ultimate phone</p>
-            </div>
-
-            <div class="column one-fourth">
-                <h3>iphone 14</h3>
-                <p>The ultimate phone</p>
-            </div>
-
-
-
+            <article>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    
+                <h2 class="subhead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ultrices augue vitae purus sodales eleifend.</h2>
+    
+                <div class="date">Date MM/DD/YYYY</div>
+    
+                <p> Sed faucibus egestas ultricies. Vivamus enim auctor hendrerit elit. Morbi facilisis tempus orci, sed placerat metus auctor non. Etiam non lacus erat, sit amet porttitor tellus. Curabitur pretium tincidunt tortor in vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi quam eros, bibendum ut pellentesque id, tristique eget lacus. Ut fermentum ligula vitae est luctus at iaculis nunc placerat.</p>
+    
+                <p>Vestibulum urna erat, viverra in dignissim quis, bibendum lobortis sapien. Integer porttitor magna ut orci aliquam sed suscipit eros adipiscing. Pellentesque feugiat mi id eros placerat sit amet hendrerit tortor ultricies. Praesent pellentesque lorem eget ligula egestas sit amet elementum lacus dignissim. Duis semper sapien id massa vehicula quis malesuada est molestie. Vestibulum ac nunc in metus egestas sodales. In dignissim luctus eros, non facilisis nisi vulputate vulputate. Cras bibendum venenatis ipsum, sed euismod quam rhoncus rhoncus. Nullam consectetur augue ac mi convallis nec tempor odio pellentesque. </p>
+    
+                <h5>Nam ut metus sit amet odio tincidunt tincidunt vitae a orci. </h5>
+                
+                <p>Maecenas at urna sapien, in lobortis tellus. Morbi eget felis eget tellus dapibus pellentesque. Duis dapibus pulvinar ipsum eu dapibus. Suspendisse potenti. Etiam sollicitudin velit eget nisi vulputate eu semper quam semper. Sed vitae ipsum quam. Nunc sed purus nisl, sit amet luctus nisi. Ut enim massa, sagittis et commodo eget.</p>
+    
+                <blockquote> Pellentesque rutrum, nunc sit amet adipiscing tempor, erat leo laoreet est, eu rhoncus risus elit quis lectus. Cras nulla tellus, sollicitudin quis commodo eget, commodo vel sapien.</blockquote>
+                
+               
+            </article>
 
         </div>
-
-
     </section>
+    
 
-    <div class="container">
-      <article>
-            
-        </article>
-    </div>
+    <section id="contact">
+        <div class="container">
 
-
-</div>
+            <h3 class="section-title">Let's Connect</h3>
 
 
-
+            <form>
+                <label for="contact_name">Name:</label>
+                <input class="text" type="text" value="" name="contact_name" id="contact_name" />
+    
+                <label for="contact_email">Email Address:</label>
+                <input class="text" type="text" value="" name="contact_email" id="contact_email" />
+    
+                <label for="contact_message">Message:</label>
+                <textarea name="contact_message" id="contact_message"></textarea>
+    
+                <input type="submit" value="Submit" />
+    
+    
+            </form>
+        </div>
+    </section>
 </main>
 
 <footer class="site-footer">
     <div class="container">
         <nav class="site-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="nav group">
+                <li><a class="scroll" href="#top">Home</a></li>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
+<!-- END CONTAINER -->
 </footer>
 
-
+<!-- SCROLL JS FILE -->
+<script src="js/scroll.js"></script>
 
 
 <!-- MAIN JS FILE -->
 <script src="js/script.js"></script>
 
 </body>
+
 </html>
