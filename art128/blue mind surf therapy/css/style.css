@@ -369,7 +369,12 @@ section {
 .hero { 
     padding: 6em 4%;
     background-color: rgba(0,0,0,.1);
+    background-image: url(../img/hero-surfers.jpg) ;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     text-align: center;
+    min-height: 50vh;
 }
 
 .hero h1, .hero p {
@@ -553,6 +558,13 @@ form input[type="submit"] {
     padding-top: 3em;
 }
 
+.site-header.transtop {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+
+}
+
   #about {
     background: rgba(0,0,0,0.05);
   }
@@ -561,4 +573,4 @@ form input[type="submit"] {
     background: rgba(0,0,0,.1);
   }
 
-@media (min-height:600px);
+/* @media (min-height:600px); */
