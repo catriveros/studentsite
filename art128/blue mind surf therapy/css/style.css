@@ -39,7 +39,7 @@ body {
 
 body, h1, h2, h3 {
 font-family: "proxima-nova", sans-serif;
-font-weight: 100;
+font-weight: 300;
 font-style: normal;
 }
 
@@ -56,18 +56,21 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em; /* 48px */
-  line-height: 1; 
+  line-height: 1;
+  font-weight: 400; 
 }
 
 h2 {
   font-size: 2.25em; /* 36px */
-  line-height: 1.1; 
+  line-height: 1.1;
+  font-weight: 400; 
   
 }
 
 h3 {
   font-size: 1.5em; /* 24px */
   line-height: 1.2; 
+  font-weight: 400;
  
 }
 
@@ -590,5 +593,19 @@ form input[type="submit"] {
 .facilitators {
     padding-bottom: 3em;
      
+}
+
+/* SECTION 1 STYLING */
+
+.section1 {
+    text-align: center;
+}
+
+.section2 {
+    text-align: left;
+}
+
+.section3 {
+    text-align: center;
 }
 
