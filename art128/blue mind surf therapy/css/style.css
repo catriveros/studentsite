@@ -32,11 +32,16 @@
 /* TYPOGRAPHY - BASE BODY */
 body {
   font-size: 87.5%; /* 14px */
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, "proxima-nova", sans-serif;
   line-height: 1.5;
   color: rgba(0,0,0,.8);
 }
 
+body, h1, h2, h3 {
+font-family: "proxima-nova", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
 
 /* HEADINGS */
 /* 
