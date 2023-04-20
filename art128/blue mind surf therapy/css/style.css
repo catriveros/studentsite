@@ -32,14 +32,15 @@
 /* TYPOGRAPHY - BASE BODY */
 body {
   font-size: 87.5%; /* 14px */
-  font-family: Helvetica, Arial, "proxima-nova", sans-serif;
+  /* font-family: Helvetica, Arial, "proxima-nova", sans-serif; */
   line-height: 1.5;
   color: rgba(0,0,0,.8);
+  font-weight: 300;
 }
 
 body, h1, h2, h3 {
-font-family: "proxima-nova", sans-serif;
-font-weight: 300;
+font-family: "proxima-nova", Helvetica, Arial,  sans-serif;
+
 font-style: normal;
 }
 
@@ -51,26 +52,27 @@ font-style: normal;
 
 h1, h2, h3, h4, h5, h6 {
   margin: .5em 0; 
+  font-weight: 400;
 }
 
 
 h1 {
   font-size: 3em; /* 48px */
   line-height: 1;
-  font-weight: 400; 
+ 
 }
 
 h2 {
   font-size: 2.25em; /* 36px */
   line-height: 1.1;
-  font-weight: 400; 
+  
   
 }
 
 h3 {
   font-size: 1.5em; /* 24px */
   line-height: 1.2; 
-  font-weight: 400;
+  
  
 }
 
@@ -114,8 +116,17 @@ a:hover {
 /* HELPER CLASSES */ 
 .text-centered {
   text-align: center;
-}
 
+}
+@media (min-width: 768px){
+    .text-right {
+        text-align: right;
+    }
+}
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
 .hidden {
   position: absolute;
   top: -9999px;
@@ -597,15 +608,11 @@ form input[type="submit"] {
 
 /* SECTION 1 STYLING */
 
-.section1 {
-    text-align: center;
-}
 
-.section2 {
-    text-align: left;
-}
 
-.section3 {
-    text-align: center;
-}
+
+
+
+
+
 
