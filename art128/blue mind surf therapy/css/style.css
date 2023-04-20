@@ -33,7 +33,7 @@
 body {
   font-size: 87.5%; /* 14px */
   /* font-family: Helvetica, Arial, "proxima-nova", sans-serif; */
-  line-height: 1.5;
+  line-height: 1.6;
   color: rgba(0,0,0,.8);
   font-weight: 300;
 }
@@ -95,7 +95,8 @@ h6 {
 /* PARAGRAPHS */
 p {
   margin: .5em 0; 
-  max-width: 38em; 
+  max-width: 38em;
+
   
   
 }
@@ -390,11 +391,13 @@ section {
     padding: 6em 0; 
 }
 
+
+
 /* HERO */
 .hero { 
     padding: 6em 4%;
     background-color: rgba(0,0,0,.1);
-    background-image: url(../img/hero-surfers.jpg) ;
+    background-image: url(../img/hero-surfer-v6.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -607,6 +610,18 @@ form input[type="submit"] {
 }
 
 /* SECTION 1 STYLING */
+.section1 {
+    padding-bottom: 3em;
+
+
+}
+
+/* SECTION 2 STYLING */
+.section2 {
+    padding-bottom: 1em;
+
+
+}
 
 
 
