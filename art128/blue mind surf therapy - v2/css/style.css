@@ -232,7 +232,7 @@ body { margin: 0;}
 
 @media (min-width: 1250px) {
   body {
-      font-size: 112.5%; /* 18px */
+      font-size: 106.25%; /* 18px */
   }
   .container {
       max-width: 1200px;
@@ -388,6 +388,11 @@ body.demo:before {
 .site-nav .menu-button {
     display: none; 
 }
+
+.site-main {
+    overflow-x: hidden;
+}
+
 
 /* SECTIONS */
 section {
@@ -640,7 +645,7 @@ form input[type="submit"] {
 .section4 {
     padding-bottom: 1em;
     padding-top: 0em;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 
 
 }
@@ -656,19 +661,122 @@ form input[type="submit"] {
     /* border: 1px solid red; */
     padding-right: 2em;
 }
-
 .gradientblue {
-    /* border: 1px solid red; */
-    background-image: radial-gradient(rgb(159, 201, 188),rgba(255,255,255,1), white);
-    background-position: center;
-   
+
+    position: relative;
+    /* overflow-x: hidden; */
+}
+.gradientblue::before {
+    border: 1px solid green;
+    background-image: radial-gradient(rgb(169, 208, 224),white,white);
+    background-position: 50% 50%;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    z-index: -1;
+    transform: translate(-50%,-50%) rotate(-9deg);
+
 }   
 
+.gradientgreen {
 
-.column.one-third {
-    background-image: radial-gradient(rgb(30, 32, 32),rgba(255,255,255,1), white);
+    position: relative;
+    /* overflow-x: hidden; */
+}
+.gradientgreen::before {
+    /* border: 1px solid green; */
+    background-image: radial-gradient(rgb(169, 224, 190),white,white);
+    background-position: 50% 50%;
+    background-size: 30% 30%;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 90%;
+    width: 150%;
+    height: 150%;
+    z-index: -1;
+    transform: translate(-50%,-50%) rotate(-9deg);
+
+}  
+
+.gradientpink {
+
+    position: relative;
+    /* overflow-x: hidden; */
+}
+.gradientpink::before {
+    /* border: 1px solid green; */
+    background-image: radial-gradient(rgb(169, 224, 190),white,white);
+    background-position: 50% 50%;
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 150%;
+    height: 150%;
+    z-index: -1;
+    transform: translate(-50%,-50%) rotate(-9deg);
+
+}  
+.gradientyellow{
+    position: relative;
+    /* overflow-x: hidden; */
+
+}
+
+.gradientyellow::before {
+
+    border: 1px solid green;
+    background-image: radial-gradient(rgb(169, 208, 224),white,white);
+    background-position: 50% 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    z-index: -1;
+    transform: translate(-50%,-50%) rotate(-9deg);
+
+
+}
+
+.star{
+    border: 1px solid green;
+    position: relative;
+    /* background-size: 0%; */
+   
     
 }
+
+.star::before {
+    border: 1px solid green;
+    background-position: left -10px;
+    background-repeat: no-repeat;
+    background-image: url(../img/Star.JPG);
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    
+    
+  
+   
+
+}
+    
 
 
 
