@@ -1,3 +1,43 @@
+/*
+CSS TABLE OF CONTENTS
+
+# GLOBAL VARIABLES
+# GLOBAL COLORS
+# GLOBAL TYPOGRAPHY
+
+# LAYOUT
+  # MEDIA QUERIES (W/ RESPONSIVE TYPOGRAPHY)
+  # CONTAINER
+  # GRID
+
+# CUSTOM STYLING
+  # CUSTOM TYPE BLOCK/SPECIMEN
+
+*/
+
+/* --------------------------- */
+/*-------GLOBAL STYLING------- */
+/*---------------------------- */
+
+/* SET GLOBAL VARIABLES */
+
+
+P {
+    max-width: 60ch;
+}
+
+body {background:yellow;
+}
+
+@media (min-width:768) {
+    body {background: pink;}
+}
+
+@media (min-width:1250) {
+    body {background: teal;}
+}
+
+
 :root {
 
   /* BASE COLORS */
@@ -6,6 +46,10 @@
   --color-headings: rgb(0 0 0 / 1);
   --color-links: rgb(51 102 204 / 1);
   --color-links-dark: rgb(0 51 153 / 1);
+
+   /* BASE TYPOGRAPHY */
+   --font-body: Helvetica, Arial, sans-serif;
+   --font-heading: Georgia, sans-serif;
 
 }
 
