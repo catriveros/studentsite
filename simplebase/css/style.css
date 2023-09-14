@@ -1,43 +1,27 @@
-/*
-CSS TABLE OF CONTENTS
+/* 
+CSS TABLE OF CONTENTS 
 
-# GLOBAL VARIABLES
-# GLOBAL COLORS
-# GLOBAL TYPOGRAPHY
+# GLOBAL
+    # GLOBAL VARIABLES (CUSTOM PROPERTIES)
+    # GLOBAL RESETS
+    # GLOBAL COLORS
+    # GLOBAL TYPOGRAPHY
 
 # LAYOUT
-  # MEDIA QUERIES (W/ RESPONSIVE TYPOGRAPHY)
-  # CONTAINER
-  # GRID
+    # MEDIA QUERIES (w/ RESPONSIVE TYPOGRAPHY)
+    # CONTAINER
+    # GRID
 
 # CUSTOM STYLING
-  # CUSTOM TYPE BLOCK/SPECIMEN
+    # CUSTOM TYPE BLOCK/SPECIMEN
 
 */
 
-/* --------------------------- */
-/*-------GLOBAL STYLING------- */
-/*---------------------------- */
+/* ----------------------------- */
+/* ----- GLOBAL STYLING -------- */
+/* ----------------------------- */
 
 /* SET GLOBAL VARIABLES */
-
-
-P {
-    max-width: 60ch;
-}
-
-body {background:yellow;
-}
-
-@media (min-width:768) {
-    body {background: pink;}
-}
-
-@media (min-width:1250) {
-    body {background: teal;}
-}
-
-
 :root {
 
   /* BASE COLORS */
@@ -46,12 +30,20 @@ body {background:yellow;
   --color-headings: rgb(0 0 0 / 1);
   --color-links: rgb(51 102 204 / 1);
   --color-links-dark: rgb(0 51 153 / 1);
+  --color-accent-color: rgb(102, 204, 124);
 
-   /* BASE TYPOGRAPHY */
-   --font-body: Helvetica, Arial, sans-serif;
-   --font-heading: Georgia, sans-serif;
-
+  /* BASE TYPOGRAPHY */
+  --font-body: Helvetica, Arial, sans-serif;
+  --font-headings: Georgia, sans-serif;
+ 
+  /* MEASURMENT UNITS */
+  --gridgap: 2em;
 }
+
+/* GLOBAL RESETS */
+body { margin: 0; }
+* { box-sizing: border-box; }
+
 
 /* SET GLOBAL COLORS */
 body {
@@ -66,4 +58,80 @@ a {
 }
 a:hover {
   color: var(--color-links-dark);
+}
+
+/* SET GLOBAL TYPOGRAPHY */
+body {
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+h1, h2, h3 {
+  font-family: var(--font-headings);
+}
+p {
+  max-width: 60ch;
+}
+
+/* MEDIA QUERIES w/ RESPONSIVE TYPOGRAPHY */
+body {
+  font-size: 87.5%;
+} 
+
+@media (min-width:768px) {
+  body {
+      font-size: 100%;
+  } 
+}
+
+@media (min-width:1250px) {
+  body {
+      font-size: 112.5%;
+  } 
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* GRID SYSTEM */
+.row {
+    display: flex;
+    gap: var(--gridgap);
+}
+
+.column {
+    flex-grow: 1;
+}
+
+/* FOR DEMO GRID ONLY */
+.demo .row {
+  background: yellow;
+  border: 1px solid green;
+
+}
+
+
+
+.column {
+  background: pink;
+}
+
+
+/* ----------------------------- */
+/* ----- CUSTOM STYLING -------- */
+/* ----------------------------- */
+
+/* CUSTOM TYPE BLOCK: HEADLINE AND SUB HEADLINE */
+.headline {
+  font-size: 4em;
+  color: var(--color-accent-color);
+  margin: 1rem 0;
+  line-height: 1;
+}
+.subheadline {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 1rem 0;
 }
