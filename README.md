@@ -1,4 +1,4 @@
 # studentsite
 This is Cat's class website
 
-[view my site](https://catriveros.github.io/studentsite)
+[View my student site](https://catriveros.github.io/studentsite)
